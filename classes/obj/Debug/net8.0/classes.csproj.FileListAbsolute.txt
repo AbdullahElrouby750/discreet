@@ -9,3 +9,4 @@ D:\codez\uni projects\discreet\classes\obj\Debug\net8.0\classes.dll
 D:\codez\uni projects\discreet\classes\obj\Debug\net8.0\refint\classes.dll
 D:\codez\uni projects\discreet\classes\obj\Debug\net8.0\classes.pdb
 D:\codez\uni projects\discreet\classes\obj\Debug\net8.0\ref\classes.dll
+D:\codez\uni projects\discreet\classes\obj\Debug\net8.0\classes.sourcelink.json

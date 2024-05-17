@@ -25,7 +25,7 @@ public class graph{
 
     private void setRelations()
     {
-        for (int i = 0; i < Set.Count; i++)
+        for (int i = 0; i < Set.Count; i++)//1
         {
             for (int j = 0; j < Set.Count; j++)
             {
@@ -44,9 +44,9 @@ public class graph{
     public void PrintRelations()
     {
         Console.WriteLine("\nR = {");
-        for (int i = 0; i < Set.Count; i++)
+        for (int i = 0; i < Set.Count; i++)//3
         {
-            for (int j = 0; j < Set.Count; j++)
+            for (int j = 0; j < Set.Count; j++)//1
             {
                 if(Matrix[i][j] == true)
                 {
@@ -60,12 +60,12 @@ public class graph{
 
     private void CheckRelationPropertiesStates()
     {
-        for (int i = 0; i < Set.Count; i++)
+        for (int i = 0; i < Set.Count; i++)//0
         {
-            for (int j = 0; j < Set.Count; j++)
+            for (int j = 0; j < Set.Count; j++)//1
             {
                 if (i == j && Matrix[i][j] == false)                    // check reflexive
-                {
+                {   
                     Reflexive = false;
                 }
 
@@ -79,23 +79,23 @@ public class graph{
                     {
                         AntiSymmetric = false;
                     }
-                    if(Matrix[j][i] == true && Transitive == true)       // check transitive
+                    if(Transitive == true)                              // check transitive
                     {
-                        for (int k = 0; k < Set.Count; k++)
+                        for (int k = 0; k < Set.Count; k++)//2
                         {
                             if (Matrix[j][k] == true && j != k && i != k)
                             {
                                 if (Matrix[i][k] == true)
-                                {
+                                {       
                                     break;
                                 }
-                                else
+                                else if(k == Set.Count - 1)
                                 {
                                     Transitive = false;
                                     break;
                                 }
                             }
-                            else if (j != k)
+                            else if (j != k && k == Set.Count - 1)
                             {
                                 Transitive = false;
                                 break;

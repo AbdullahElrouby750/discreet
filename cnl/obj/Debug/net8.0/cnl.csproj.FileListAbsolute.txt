@@ -16,3 +16,4 @@ D:\codez\uni projects\discreet\cnl\obj\Debug\net8.0\refint\cnl.dll
 D:\codez\uni projects\discreet\cnl\obj\Debug\net8.0\cnl.pdb
 D:\codez\uni projects\discreet\cnl\obj\Debug\net8.0\cnl.genruntimeconfig.cache
 D:\codez\uni projects\discreet\cnl\obj\Debug\net8.0\ref\cnl.dll
+D:\codez\uni projects\discreet\cnl\obj\Debug\net8.0\cnl.sourcelink.json
